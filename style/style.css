@@ -1,0 +1,425 @@
+        /* Estilo general*/
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: black;
+            padding: 0px 16px;
+        }
+        
+        header {
+            width: 100%;
+            height: 80px;
+            margin: 0;
+            overflow: auto;
+            z-index: 5;
+            position: sticky;
+            top: 0;
+            background: white;
+        }
+        
+        ul {
+            padding: 10PX;
+            justify-content: center;
+            display: inline-flex;
+            align-items: center;
+            margin: 20px;
+        }
+        /* estilo especifocos*/
+        /* Estilo navbar */
+        
+        #navbar-pinterest {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            /* Posición fija del navbar */
+            top: 0;
+            width: 100%;
+            height: 80px;
+            padding: 4px 16px 4px 16px;
+            margin: 0;
+            background: white;
+        }
+        
+        #navbar-pinterest li {
+            list-style: none;
+            margin-right: 0px;
+            cursor: pointer;
+            display: inline;
+            align-items: center;
+            justify-content: center;
+        }
+        /* estilo boton de inicio */
+        
+        #navbar-pinterest li#Inicio {
+            width: 40px;
+            height: 48px;
+            background-color: #111111;
+            padding: 0 16px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .letra-de-inicio {
+            font-weight: bold;
+            color: whitesmoke;
+        }
+        /* estilo logo pinterest */
+        
+        .logo-icono {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo-icono:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .logo-icono img {
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        /* eestilo opciones izquierda */
+        
+        #Explorar,
+        #crear {
+            cursor: pointer;
+            display: inline-block;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            font-weight: 500;
+        }
+        
+        #crear {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            font-weight: 500;
+        }
+        
+        #crear a {
+            display: inline-block;
+            padding: 0;
+            margin-right: 5px;
+        }
+        
+        #arrow-right img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 12px;
+            height: 12px;
+            margin-left: 3px;
+            align-self: flex-start;
+        }
+        /* Estilo del input */
+        
+        .search-icon {
+            position: absolute;
+            width: 16PX;
+            height: 16PX;
+            padding-left: 10px;
+            top: 35px;
+            cursor: pointer;
+        }
+        
+        #input-search {
+            width: 100%;
+            padding-left: 0;
+            margin: 10px;
+            justify-content: right;
+        }
+        
+        input.finder {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 0 0 30PX;
+            height: 48px;
+            border-radius: 24px;
+            background-color: rgb(230, 230, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+        }
+        
+        input.finder:hover {
+            background-color: rgb(225, 225, 225);
+        }
+        /* Estilo opciones derechas */
+        
+        #notifications,
+        #message,
+        #profile-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin: 0;
+            object-fit: cover;
+        }
+        
+        #notifications img,
+        #message img,
+        #profile-img img {
+            width: 25px;
+            height: 30px;
+        }
+        
+        #notifications:hover,
+        #message:hover,
+        #profile-img:hover {
+            background-color: #f0f0f0;
+        }
+        
+        ul .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin: 0;
+            object-fit: cover;
+        }
+        
+        ul .arrow img {
+            width: 12px;
+            height: 12px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .arrow:hover {
+            background-color: #f0f0f0;
+        }
+        
+        #profile-img img {
+            border-radius: 50%;
+        }
+        /* Fin de estilo navbar */
+        /* Fin de estilo header */
+        /* inicio de estilo main */
+        /* posicion de las imagenes */
+        
+        #content {
+            position: relative;
+            padding: 5px;
+            column-count: 5;
+            column-gap: 10px;
+            break-inside: avoid-column;
+        }
+        /* estilo de las imagenes */
+        
+        .card-image img {
+            border: 0;
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+            border-radius: 24px;
+        }
+        
+        .card-image {
+            position: relative;
+            margin: 15px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 24px;
+            opacity: 1;
+        }
+        /* Hover que muestra los botones */
+        
+        .card-image:hover {
+            z-index: 4;
+            .texto,
+            .button-save>*,
+            .button-link,
+            .botton-share,
+            .dots {
+                display: block;
+                z-index: 4;
+            }
+        }
+        
+        .card-image:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00000036;
+            opacity: 1;
+            z-index: 1;
+            border-radius: 24px;
+        }
+        /* Estilo de botones */
+        
+        .texto {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: white;
+            width: 60px;
+            text-align: left;
+            font-weight: bold;
+            cursor: pointer;
+            border-width: 1px;
+            font-size: 17px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .button-save>* {
+            display: none;
+            position: absolute;
+            top: 20px;
+            width: 58px;
+            font-weight: bold;
+            color: white;
+            background-color: #e60023cb;
+            padding: 12px 16px;
+            border-radius: 24px;
+            right: 20px;
+            text-align: center;
+            line-height: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .button-link {
+            display: none;
+            position: absolute;
+            bottom: 15px;
+            width: 58px;
+            color: black;
+            background-color: white;
+            padding: 6px 16px;
+            border-radius: 24px;
+            left: 20px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .botton-share img,
+        .dots img {
+            border-radius: none;
+            width: 18px;
+            height: 18px;
+            padding: 25%;
+            opacity: 0;
+        }
+        
+        .botton-share {
+            display: none;
+            position: absolute;
+            bottom: 15px;
+            right: 55px;
+            background-color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-size: cover;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+        }
+        
+        .dots {
+            display: none;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            width: 32px;
+            height: 32px;
+            background-color: white;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            background-size: cover;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+        }
+        
+        .button-save>*:hover {
+            background-color: red;
+        }
+        
+        .button-link:hover,
+        .botton-share:hover,
+        .dots:hover {
+            background-color: rgba(240, 248, 255, 0.719);
+            opacity: 1;
+        }
+        
+        .card-image:hover .texto,
+        .card-image:hover .button-save>*,
+        .card-image:hover .button-link,
+        .card-image:hover .botton-share img,
+        .card-image:hover .dots img {
+            opacity: 1;
+        }
+        /* MEDIA QUERIES */
+        
+        @media screen and (max-width: 1254px) {
+            #content {
+                column-count: 4;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #content {
+                column-count: 3;
+            }
+        }
+        
+        @media screen and (max-width: 755px) {
+            #content {
+                column-count: 2;
+            }
+        }
+        
+        @media screen and (max-width: 380px) {
+            #content {
+                column-count: 1;
+            }
+        }
